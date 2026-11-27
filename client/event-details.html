@@ -10,7 +10,9 @@
     <header>
         <nav>
             <a href="index.html" class="logo">EventRush</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="login.html" id="login-link">Login</a></li>
             </ul>
@@ -19,12 +21,15 @@
 
     <main>
         <div id="event-detail-container" class="event-detail-content">
-            <p>Loading event details...</p>
+            <div class="loading-state">
+                <div class="spinner"></div>
+                <p>Loading event details...</p>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 EventRush. All rights reserved.</p>
+        <p>&copy; 2026 EventRush. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
 </body>

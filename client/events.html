@@ -10,8 +10,10 @@
     <header>
         <nav>
             <a href="index.html" class="logo">EventRush</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
-                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
                 <li><a href="login.html" id="login-link">Login</a></li>
             </ul>
         </nav>
@@ -19,15 +21,43 @@
 
     <main>
         <section class="events-page">
-            <h2>Upcoming Sporting Events</h2>
+            <div class="events-header">
+                <h2>Upcoming Sporting Events</h2>
+                <p>Find your next game, register in seconds, and stay active.</p>
+            </div>
+
+            <!-- Search and Filter Controls -->
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search by title, location, or sport...">
+                    <button id="search-btn" class="search-btn" aria-label="Search">🔍</button>
+                </div>
+                <div class="filter-dropdown-wrapper">
+                    <label for="sport-filter" class="filter-label">Sport:</label>
+                    <select id="sport-filter" class="sport-select">
+                        <option value="All">All Sports</option>
+                        <option value="Running">Running</option>
+                        <option value="Football">Football</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Basketball">Basketball</option>
+                    </select>
+                </div>
+                <button id="clear-filter-btn" class="secondary-btn clear-btn">Reset</button>
+            </div>
+
+            <!-- Events Grid -->
             <div id="events-list" class="events-container">
-                <p>Loading events...</p>
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading events...</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 EventRush. All rights reserved.</p>
+        <p>&copy; 2026 EventRush. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
 </body>

@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventRush - Find Your Game</title>
+    <title>EventRush - Sporting Event Discovery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">EventRush</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="login.html" id="login-link">Login</a></li>
             </ul>
@@ -21,25 +23,52 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Discover & Join Sporting Events Near You</h1>
-                <p>Your next challenge awaits. Find it with EventRush.</p>
-                <a href="events.html" class="cta-button">Find Events</a>
+                <p>Your next sporting challenge awaits. Discover marathons, tournaments, friendly leagues, and matches in your city.</p>
+                <div class="hero-buttons">
+                    <a href="events.html" class="cta-button">Explore Events</a>
+                    <a href="login.html" class="secondary-btn hero-btn">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2>Why Choose EventRush?</h2>
+                <p>Connecting athletes, enthusiasts, and organizers in one seamless platform</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏃‍♂️</div>
+                    <h3>Diverse Sports</h3>
+                    <p>Running, Football, Badminton, Cricket, Basketball, and more. Find events for every interest.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Registration</h3>
+                    <p>Sign up and register for local sporting events in just one click with real-time confirmation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Community Driven</h3>
+                    <p>Meet fellow players, form teams, and celebrate fitness and healthy competition together.</p>
+                </div>
             </div>
         </section>
 
         <section class="similar-sites">
             <h2>Explore Other Platforms</h2>
-            <p>Looking for more? Check out these great event-finding websites:</p>
+            <p>Looking for more sports and entertainment? Check out these partner platforms:</p>
             <div class="site-links">
-                <a href="https://www.eventbrite.com/" target="_blank">Eventbrite</a>
-                <a href="https://www.meetup.com/" target="_blank">Meetup</a>
-                <a href="https://allevents.in/" target="_blank">AllEvents.in</a>
-                <a href="https://insider.in/" target="_blank">Paytm Insider</a>
+                <a href="https://www.eventbrite.com/" target="_blank" rel="noopener noreferrer">Eventbrite</a>
+                <a href="https://www.meetup.com/" target="_blank" rel="noopener noreferrer">Meetup</a>
+                <a href="https://allevents.in/" target="_blank" rel="noopener noreferrer">AllEvents.in</a>
+                <a href="https://insider.in/" target="_blank" rel="noopener noreferrer">Paytm Insider</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 EventRush. All rights reserved.</p>
+        <p>&copy; 2026 EventRush. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
 </body>
