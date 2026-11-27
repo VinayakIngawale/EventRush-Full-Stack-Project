@@ -1,8 +1,5 @@
 # EventRush---Full-Stack-mini-Project
 
-***this is largely made with AI for frontend and some backend (basically prompted)!! If you encounter any issues, please try resolving them using your preferred AI chatbot, as the project has already been tested. Any problems are likely due to your connection. see the images in notes for reference***
-
-
 A Full-Stack Web Application. Architected and developed a full-stack web application designed to centralize and simplify the discovery of local community sporting events.
 
 - Constructed a responsive, client-side interface using HTML5, CSS3, and Vanilla JavaScript , ensuring dynamic content rendering across desktop and mobile devices. 
@@ -10,9 +7,3 @@ A Full-Stack Web Application. Architected and developed a full-stack web applica
 - Designed and managed a cloud-hosted MongoDB Atlas database using Mongoose for efficient data storage and retrieval. 
 - Implemented secure user authentication and session management by integrating JSON Web Tokens (JWT) and utilizing bcrypt.js for password hashing. 
 - eveloped a seamless event participation system that updates participant lists in real time and automatically prevents duplicate registrations
-
-
-Everything is in the files are ready to run, but few actions are required:- 
-    1. just install the node modules in the main and replace the package.JSON and package-lock.json with the ones in the repo.
-    2. Replace the link of mongoURL in .env with yours
-    
